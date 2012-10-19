@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="indeed.js"></script>
+
+    <script type="text/javascript">
+        var indeed_client = new Indeed("YOUR_PUBLISHER_NUMBER");
+        indeed_client.search({
+            q: 'javascript',
+            l: 'austin',
+            userip: '1.2.3.4',
+            useragent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2)',
+        }, function(search_response){
+            //render the jobs from the search_response
+        });
+    </script>
+</head>
+<body></body>
+</html>
